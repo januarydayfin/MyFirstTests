@@ -5,4 +5,7 @@
     <string name="email_hint">Enter your Email</string>
     <string name="invalid_email">Invalid email</string>
     <string name="valid_email">OK</string>
+    <string name="_2">2 значение</string>
+    <string name="_1">1 значение</string>
+    <string name="compute">Compute</string>
 </resources>
