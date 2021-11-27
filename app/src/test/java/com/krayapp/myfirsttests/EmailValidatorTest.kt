@@ -12,8 +12,19 @@ class EmailValidatorTest {
     }
 
     @Test
+    fun declineEmailWithoutDomain(){
+        assertFalse(EmailValidator.isValidEmail("emailadress@"))
+    }
+
+
+    @Test
     fun emailValidator_CorrectEmailSubDomain_ReturnsTrue() {
         assertTrue(EmailValidator.isValidEmail("name@email.co.uk"))
+    }
+
+    @Test
+    fun declineEmailWithCyrillic(){
+        assertFalse(EmailValidator.isValidEmail("василий@gmail.com"))
     }
 
     @Test
